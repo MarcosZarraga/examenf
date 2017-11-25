@@ -30,6 +30,14 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.firebase ={
+      apiKey: "AIzaSyDi2XLJroRD_wdT4tAyXDnZpg9diniRFPM",
+    authDomain: "examen-fina.firebaseapp.com",
+    databaseURL: "https://examen-fina.firebaseio.com",
+    projectId: "examen-fina",
+    storageBucket: "",
+    messagingSenderId: "85107205053"
+    }
   }
 
   if (environment === 'test') {

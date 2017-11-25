@@ -1,0 +1,11 @@
+<p>Conceptos:</p>
+{{#each model.conceptos as |concepto index|}}
+	<h3>Concepto {{index}}</h3>
+	{{input type='text' value=concepto.descripcion placeholder='descripcion'}}
+	{{input type='number' value=concepto.cantidad placeholder='cantidad'}}
+	{{input type='number' value=concepto.precio placeholder='precio'}}
+	{{input type='number' value=concepto.descuento placeholder='descuento'}}
+	<p>importe: {{concepto.importe}}</p>
+{{/each}}
+<button {{action 'addConcepto' descripcion cantidad precio descuento on='click'}}>añadir</button>
+<button{{action 'saveFactura' on='click'}}>Guardar</button>
